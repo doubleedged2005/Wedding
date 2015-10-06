@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guest Form</title>
+</head>
+<body>
+    <h1>Add a Guest</h1>
+
+<form>
+    <div class="form-group">
+        <label>Name</label>
+        <input class="form-control" ng-model="guest.name"></input>
+    </div>
+    <div class="form-group">
+        <label>Email</label>
+        <textarea class="form-control" ng-model="guest.email"></textarea>
+    </div>
+    <input type ="button" class="btn btn-primary" value="Save" ng-click="save()"></input>
+</form>
+</body>
+</html>
