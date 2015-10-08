@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Briana & Chris</title>
+</head>
+<body>
+<div class='container'>
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="hidden-xs navbar navbar-default" role="navigation">
+                <div class='col-md-12'>
+                    <div class="navbar-header">
+                        </button> <a class="navbar-brand" href="#">Briana & Chris</a>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#details">Wedding Details</a>
+                        </li>
+                        <li>
+                            <a href="#rsvp">RSVP</a>
+                        </li>
+                        <li>
+                            <a href="#registry">Registry</a>
+                        </li>
+                        <li>
+                            <a href="#story">Our Story</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="row text-center cover background">
+        <div class="div class=" col-xs-6 col-md-4 " text-center">
+        <h1 class="cloudy">						Briana & Chris</h1>
+        <h3 class="cloudy">
+            July 23, 2016
+            <br>
+            Kansas City, MO
+        </h3>
+        <br>
+
+    </div>
+</div>
+<div class="row details background">
+    <a name="details"></a>
+    <h2 class="cloudy">Wedding Details					</h2>
+    <p class="cloudy">
+        On July 23rd, 2016 we will be joining our lives formally in ceremony and celebrating afterwards! The wedding will be held in Kansas City, MO in the Westport District.
+    </p>
+    <br>
+    <p class="cloudy">
+        More details to come! Be patient!
+    </p>
+</div>
+<div class="row rsvp background">
+    <a name="rsvp"></a>
+    <h2 class="cloudy">						RSVP					</h2>
+    <p class='cloudy'>
+    <form>
+        <div class="form-group">
+            <label class="cloudy">Name</label>
+            <input class="form-control" ng-model="guest.name"></input>
+        </div>
+        <div class="form-group">
+            <label class="cloudy">Email</label>
+            <textarea class="form-control" ng-model="guest.email"></textarea>
+        </div>
+        <div class="form-group">
+            <label class="cloudy">RSVP</label>
+            <div class="radio">
+                <label class="cloudy">
+                    <input type="radio" name="rsvpRadio" id="Yes" value="Yes" ng-model="guest.rsvp" checked>
+                    Yes, we can attend! Yay!
+                </label>
+            </div>
+            <div class="radio">
+                <label class="cloudy">
+                    <input type="radio" name="rsvpRadio" id="No" value="No" ng-model="guest.rsvp">
+                    Sadly, we cannot attend. :(
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="cloudy">Number of Adults (13+)</label>
+            <textarea class="form-control" ng-model="guest.numOfGuestsOver13"></textarea>
+        </div>
+         <div class="form-group">
+            <label class="cloudy">Number of Children (Under 13, but don't worry about including a count for babies)</label>
+            <textarea class="form-control" ng-model="guest.numOfGuestsUnder13"></textarea>
+        </div>
+        <input type ="button" class="btn btn-primary" value="Save" ng-click="save()"></input>
+    </form>
+       <!-- Fill in your information <a href = "/#/add-guest">here</a> to RSVP. You will get a confirmation email with directions! Fancy!-->
+    </p>
+
+</div>
+<div class="row registry cover background">
+    <a name="registry"></a>
+    <h2 class="cloudy">						Registry					</h2>
+    <p class="cloudy">
+        We are planning on registring on Amazon.com, Crate & Barrel, and Bed Bath & Beyond. Details will be available soon.
+    </p>
+
+</div>
+
+<div class='row story background '>
+    <a name="story"></a>
+    <div class="cloudy">
+        <h2 class="">Our Story</h2>
+        <p class="">
+            Briana & Chris met in 2010 while studying together at UMKC and living in the same dorm building. With mutual friends and classes, they spent a lot of time getting to know each other both in and out of class.
+        </p>
+        <p class="">
+            As time went on, Briana approached Chris and they started dating in the Spring of 2011.
+        </p>
+        <p class="">
+            After many summers and a whole year of Chris's masters studies spent apart, Briana and Chris became engaged when Chris popped the question in a corn field shortly after Briana relocated to Illinois to be with Chris.
+        </p>
+        <p class="">
+            Mutual passions include music, animals, laughing, and dessert.
+        </p>
+    </div>
+</div>
+</div>
+</body>
+</html>

@@ -2,16 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Briana & Chris</title>
+    <title></title>
 </head>
 <body>
+
 <h1>Briana & Chris</h1>
-    <p>
-        <a href="/#/add-guest">Add a Guest</a>
-    </p>
-    <ul>
-        <li ng-repeat='guest in WeddingGuests'>{{guest.name}}</li>
-    </ul>
+<p>
+    <a href="/#/new-home">New Home</a><br>
+    <a href="/#/add-guest">Add a Guest</a>
+</p>
+<ul>
+    <li ng-repeat='guest in WeddingGuests'>{{guest.name}}</li>
+    <li ng-repeat='guest in WeddingGuests'>{{guest.email}}</li>
+    <li ng-repeat='guest in WeddingGuests'>{{guest.rsvp}}</li>
+    <li ng-repeat='guest in WeddingGuests'>{{guest.numOfGuestsOver13}}</li>
+    <li ng-repeat='guest in WeddingGuests'>{{guest.numOfGuestsUnder13}}</li>
+</ul>
 
 </body>
 </html>

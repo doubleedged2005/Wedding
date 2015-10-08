@@ -13,8 +13,20 @@ app.config(['$routeProvider', function($routeProvider){
             templateUrl: 'partials/guest-form.html',
             controller: 'AddGuestCtrl'
         })
+        .when('/guest-list', {
+            templateUrl: 'partials/guestlist.html',
+            controller: 'HomeCtrl'
+        })
+        .when('/new-home', {
+            templateUrl: 'partials/newHome.html',
+            controller: 'AddGuestCtrl'
+        })
+        .when('/success', {
+            templateUrl: 'partials/success.html',
+            controller: 'AddGuestCtrl'
+        })
         .otherwise({
-            redirectTo: '/'
+            redirectTo: '/newHome.html'
         });
 }]);
 
@@ -32,7 +44,7 @@ app.controller('AddGuestCtrl', ['$scope', '$resource', '$location',
       $scope.save = function () {
           var WeddingGuests = $resource('/api/weddingguests');
           WeddingGuests.save($scope.guest, function () {
-              $location.path('/');
+            $location.path('success');
           });
       };
   }]);
