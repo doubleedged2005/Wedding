@@ -8,6 +8,8 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var WeddingGuests = require('./routes/WeddingGuests');
+var nodemailer = require('nodemailer'); //new
+var router = express.Router(); //new
 
 var app = express();
 
@@ -27,6 +29,39 @@ app.use('/', routes);
 app.use('/users', users);
 app.use('/api/WeddingGuests', WeddingGuests);
 
+/*new
+app.use('/sayHello', router);
+router.post('/', handleSayHello); //handle the route at yourdomain.com/sayHello
+
+function handleSayHello(req, res){
+ var transporter = nodemailer.createTransport({
+   service: 'Gmail',
+   auth: {
+     user: 'chris.briana.2016@gmail.com',
+     pass: '4r4t4rC!'
+   };
+ });
+};
+
+var text = "Hello world!"
+
+var mailOptions = {
+  from: 'chris.briana.2016@gmail.com',
+  to: guest.email,
+  subject: 'We got your RSVP!',
+  text: text
+};
+
+transporter.sendMail(mailOptions, function(error, info){
+  if(error){
+    throw error
+  } else {
+    console.log('Message sent: ' + info.response);
+    res.json({yo: info.response});
+  };
+});
+
+*/
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
