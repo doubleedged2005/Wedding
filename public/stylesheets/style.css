@@ -3,14 +3,17 @@ body {
   color: white;
 }
 
-.container {
-  width: 100%;
+.my-fluid-container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .navbar {
   position: fixed;
   z-index: 1;
-  width: 95%;
+  width: 100%;
 }
 
 .background {
@@ -19,7 +22,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  /*margin: 5em, 0, 0, 5em;*/
 }
 
 h1 {
@@ -69,4 +71,3 @@ h1 {
 .story {
   background-image: url("http://i.ytimg.com/vi/_gAjlEY5e0c/maxresdefault.jpg");
 }
-

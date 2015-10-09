@@ -5,10 +5,10 @@
     <title>Briana & Chris</title>
 </head>
 <body>
-<div class='container'>
+<div class='my-fluid-container'>
     <div class="row">
         <div class="col-md-12">
-            <nav class="hidden-xs navbar navbar-default" role="navigation">
+            <nav class="hidden-xs navbar navbar-default navbar-fixed-top" role="navigation">
                 <div class='col-md-12'>
                     <div class="navbar-header">
                         </button> <a class="navbar-brand" href="#">Briana & Chris</a>
@@ -55,45 +55,43 @@
     </p>
 </div>
 <div class="row rsvp background">
-    <a name="rsvp"></a>
-    <h2 class="cloudy">						RSVP					</h2>
-    <p class='cloudy'>
+    <div class="cloudy">
+    <h2 class="">RSVP</h2>
     <form>
         <div class="form-group">
-            <label class="cloudy">Name</label>
+            <label>Name</label>
             <input class="form-control" ng-model="guest.name"></input>
         </div>
         <div class="form-group">
-            <label class="cloudy">Email</label>
-            <textarea class="form-control" ng-model="guest.email"></textarea>
+            <label>Email</label>
+            <input class="form-control" ng-model="guest.email"></input>
         </div>
         <div class="form-group">
-            <label class="cloudy">RSVP</label>
+            <label>RSVP</label>
             <div class="radio">
-                <label class="cloudy">
+                <label>
                     <input type="radio" name="rsvpRadio" id="Yes" value="Yes" ng-model="guest.rsvp" checked>
                     Yes, we can attend! Yay!
                 </label>
             </div>
             <div class="radio">
-                <label class="cloudy">
+                <label>
                     <input type="radio" name="rsvpRadio" id="No" value="No" ng-model="guest.rsvp">
                     Sadly, we cannot attend. :(
                 </label>
             </div>
         </div>
         <div class="form-group">
-            <label class="cloudy">Number of Adults (13+)</label>
-            <textarea class="form-control" ng-model="guest.numOfGuestsOver13"></textarea>
+            <label>Number of Adults (Ages 13+)</label>
+            <input class="form-control" ng-model="guest.numOfGuestsOver13"></input>
         </div>
          <div class="form-group">
-            <label class="cloudy">Number of Children (Under 13, but don't worry about including a count for babies)</label>
-            <textarea class="form-control" ng-model="guest.numOfGuestsUnder13"></textarea>
+            <label>Number of Children (Ages 12 and under, but don't worry about including a count for babies)</label>
+            <input class="form-control" ng-model="guest.numOfGuestsUnder13"></input>
         </div>
         <input type ="button" class="btn btn-primary" value="Save" ng-click="save()"></input>
     </form>
-       <!-- Fill in your information <a href = "/#/add-guest">here</a> to RSVP. You will get a confirmation email with directions! Fancy!-->
-    </p>
+    </div>
 
 </div>
 <div class="row registry cover background">
