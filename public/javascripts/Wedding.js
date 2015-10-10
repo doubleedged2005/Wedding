@@ -18,7 +18,7 @@ app.config(['$routeProvider', function($routeProvider){
             controller: 'HomeCtrl'
         })
         .when('/new-home', {
-            templateUrl: 'partials/newHome.html',
+            templateUrl: '/',
             controller: 'AddGuestCtrl'
         })
         .when('/success', {
@@ -44,7 +44,7 @@ app.controller('AddGuestCtrl', ['$scope', '$resource', '$location',
       $scope.save = function () {
           var WeddingGuests = $resource('/api/weddingguests');
           WeddingGuests.save($scope.guest, function () {
-            $location.path('success.html');
+            $location.path('success');
           });
       };
   }]);
