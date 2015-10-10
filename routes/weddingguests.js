@@ -9,7 +9,7 @@ var router = express.Router();
 
 var monk = require('monk');
 //var db = monk('localhost:27017/Wedding');
-var db = monk("mongodb://"+process.env.dbuser+":"+process.env.password+"@"+process.env.dbhost);
+var db = monk(process.env.dbuser+":"+process.env.password+"@"+process.env.dbhost);
 
 router.get('/', function(req, res) {
     var collection = db.get('WeddingGuests');
