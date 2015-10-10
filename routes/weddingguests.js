@@ -14,7 +14,7 @@ var db = monk("mongodb://"+process.env.dbuser+":"+process.env.password+"@"+proce
 router.get('/', function(req, res) {
     var collection = db.get('WeddingGuests');
     collection.find({}, function(err, WeddingGuests){
-        if (err) throw err;
+        if (err) console.log(err);
         res.json(WeddingGuests);
     });
 });
@@ -28,7 +28,7 @@ router.post('/', function(req, res){
         numOfGuestsOver13: req.body.numOfGuestsOver13,
         numOfGuestsUnder13: req.body.numOfGuestsUnder13
     }, function(err, guest){
-        if (err) throw err;
+        if (err) console.log(err);
 
         res.json(guest);
     });
