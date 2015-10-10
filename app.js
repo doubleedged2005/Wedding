@@ -5,11 +5,13 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+require('dotenv').load();
+
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var WeddingGuests = require('./routes/WeddingGuests');
-var nodemailer = require('nodemailer'); //new
-var router = express.Router(); //new
+//var nodemailer = require('nodemailer'); //new
+//var router = express.Router(); //new
 
 var app = express();
 
