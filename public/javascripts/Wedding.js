@@ -44,8 +44,7 @@ app.controller('AddGuestCtrl', ['$scope', '$resource', '$location',
       $scope.save = function () {
           var WeddingGuests = $resource('/api/weddingguests');
           WeddingGuests.save($scope.guest, function () {
-            console.log(arguments);
-            $location.path('success');
+            $location.path('success.html');
           });
       };
   }]);
