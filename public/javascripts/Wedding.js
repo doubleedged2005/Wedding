@@ -6,8 +6,8 @@ var app = angular.module('Wedding', ['ngResource', 'ngRoute']);
 app.config(['$routeProvider', function($routeProvider){
     $routeProvider
         .when('/', {
-            templateUrl: 'partials/home.html',
-            controller: 'HomeCtrl'
+            templateUrl: 'partials/newHome.html',
+            controller: 'AddGuestCtrl'
         })
         .when('/add-guest', {
             templateUrl: 'partials/guest-form.html',
@@ -18,7 +18,7 @@ app.config(['$routeProvider', function($routeProvider){
             controller: 'HomeCtrl'
         })
         .when('/new-home', {
-            templateUrl: '/',
+            templateUrl: 'partials/newHome.html',
             controller: 'AddGuestCtrl'
         })
         .when('/success', {
