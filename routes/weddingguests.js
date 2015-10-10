@@ -20,6 +20,7 @@ router.get('/', function(req, res) {
 });
 
 router.post('/', function(req, res){
+    console.log("success");
     var collection = db.get('WeddingGuests');
     collection.insert({
         name: req.body.name,
