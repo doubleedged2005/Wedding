@@ -9,7 +9,7 @@ var RSVP = React.createClass({
               data: data
           }).done(function(data){
               console.log(data);
-          }); 
+          });
           return false;
       });
       
@@ -49,6 +49,13 @@ var RSVP = React.createClass({
                  <div className="form-group">
                     <label>Number of Children (Ages 12 and under, but don't worry about including a count for babies</label>
                     <input name = "numOfGuestsUnder13" className="form-control" />
+                </div>
+                <div className="form-group">
+                    <label> Do you have a favorite song to dance to at wedding receptions?
+                    <input name = "favSong" className="form-control"/>
+                    </label>
+                </div>
+                <div>
                     <input type ="submit" className="btn btn-primary"/>
                 </div>
             </form>

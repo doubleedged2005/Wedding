@@ -23,7 +23,8 @@ router.post('/', function(req, res){
         email: req.body.email,
         rsvp: req.body.rsvpRadio,
         numOfGuestsOver13: req.body.numOfGuestsOver13,
-        numOfGuestsUnder13: req.body.numOfGuestsUnder13
+        numOfGuestsUnder13: req.body.numOfGuestsUnder13,
+        favSong: req.body.favSong
     }, function(err, guest){
         if (err) console.log(err);
 
