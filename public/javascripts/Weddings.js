@@ -31,13 +31,13 @@ var RSVP = React.createClass({
                     <label> RSVP
                         <div className="radio">
                             <label>
-                                <input type="radio" name="rsvpRadio" id="Yes" value="Yes" defaultChecked />
+                                <input type="radio" name="rsvpRadio" id="Yes" value=true defaultChecked />
                                 Yes, we can attend! Yay!
                             </label>
                         </div>
                         <div className="radio">
                             <label>
-                                <input type="radio" name="rsvpRadio" id="No" /> Sadly, we cannot attend. :(
+                                <input type="radio" name="rsvpRadio" id="No" value=false/> Sadly, we cannot attend. :(
                             </label>
                         </div>
                     </label>
