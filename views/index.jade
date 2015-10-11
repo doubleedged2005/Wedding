@@ -2,4 +2,61 @@ extends layout
 
 block content
   //div(ng-view)
-  include ./../public/partials/newHome.html
+  div(class='my-fluid-container')
+    div(class="row")
+      div(class="col-md-12")
+        nav(class="hidden-xs navbar navbar-default navbar-fixed-top", role="navigation")
+          div(class='col-md-12')
+            div(class="navbar-header")
+              a(class="navbar-brand", href="#") Briana & Chris
+              ul(class="nav navbar-nav navbar-right")
+                li
+                  a(href="#details") Wedding Details
+                li
+                  a(href="#rsvp") RSVP
+                li
+                  a(href="#registry") Registry
+                li
+                  a(href="#aroundtown") What's Around Town
+                li
+                  a(href="#story") Our Story
+    div(class="row text-center cover background")
+      div(class="text-center")
+        h1(class="cloudy") Briana & Chris
+        h3(class="cloudy") July 23, 2016#[br]Kansas City, MO
+        br
+  a(name="details")
+  div(class="row details background")
+  
+      h2(class="cloudy") Wedding Details
+      p(class="cloudy") On July 23rd, 2016 we will be joining our lives formally in ceremony and celebrating afterwards! The wedding will be held in Kansas City, MO in the Westport District.
+      br
+      p(class="cloudy") More details to come! Be patient!
+      
+  a(name="rsvp")
+  div(class="row rsvp background")
+  
+      div(class="cloudy")
+        h2(class="") RSVP
+        #mount
+  
+  a(name="registry")
+  div(class="row registry cover background")
+  
+      h2(class="cloudy") Registry
+      p(class="cloudy") We are planning on registring on Amazon.com, Crate & Barrel, and Bed Bath & Beyond. Details will be available soon.
+  
+  a(name="aroundtown")
+    div(class="row whatsaround cover background")
+  
+      h2(class="cloudy") What's Around KC
+      p(class="cloudy") Check here for restaurant recommendations, fun things to do, and places to visit while in KC.
+  
+  a(name="story")
+  div(class='row story background ')
+      div(class="cloudy")
+          h2(class="") Our Story
+          p(class="") Briana & Chris met in 2010 while studying together at UMKC and living in the same dorm building. With mutual friends and classes, they spent a lot of time getting to know each other both in and out of class.
+          p(class="") As time went on, Briana approached Chris and they started dating in the Spring of 2011.
+          p(class="") After many summers and a whole year of Chris's masters studies spent apart, Briana and Chris became engaged when Chris popped the question in a corn field shortly after Briana relocated to Illinois to be with Chris.
+          p(class="") Mutual passions include music, animals, laughing, and dessert.
