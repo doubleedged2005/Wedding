@@ -9,6 +9,7 @@ var RSVP = React.createClass({
               data: data
           }).done(function(data){
               console.log(data);
+              $('.success').html("<br>Your RSVP has successfully been submitted. If you need to make changes, please contact Briana or Chris.")
           });
           return false;
       });
@@ -57,6 +58,8 @@ var RSVP = React.createClass({
                 </div>
                 <div>
                     <input type ="submit" className="btn btn-primary"/>
+                </div>
+                <div className="success">
                 </div>
             </form>
         );
