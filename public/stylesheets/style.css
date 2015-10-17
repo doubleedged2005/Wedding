@@ -35,7 +35,7 @@ h1 {
 }
 
 .cover {
-  background-image: url("http://7-themes.com/data_images/out/64/6989570-dog-costume-funny-photo.jpg");
+  background-image: url("/images/parkpicture1.jpg");
   height: 45em;
   color: rgba(55, 55, 55, 0.8);
 }
@@ -49,11 +49,11 @@ h1 {
 
 .details {
   color: black;
-  background-image: url("http://i.huffpost.com/gen/827508/images/o-FUNNY-PET-COSTUMES-facebook.jpg");
+  background-image: url("/images/kauffmanpic4.jpg");
 }
 
 .rsvp {
-  background-image: url("http://www.laughspark.info/uploadfiles/a-funny-banana-costume-for-dog-6648.jpg");
+  background-image: url("/images/parkpicture2.jpg");
 }
 
 .feature {
@@ -61,11 +61,11 @@ h1 {
 }
 
 .registry {
-  background-image: url("http://2.bp.blogspot.com/-GMJhcDXWpbs/UI7OiCaVkZI/AAAAAAAAZxM/7hah3Pc0oCc/s1600/funny-pet-costumes-010.jpg")
+  background-image: url("/images/kauffmanpic2.jpg")
 }
 
 .whatsaround {
-  background-image: url("http://darkroom.baltimoresun.com/wp-content/uploads/2013/10/AFP_Getty-524108961.jpg");
+  background-image: url("/images/kauffmanpic3.jpg");
 }
 
 .greyread {
@@ -73,5 +73,5 @@ h1 {
 }
 
 .story {
-  background-image: url("http://i.ytimg.com/vi/_gAjlEY5e0c/maxresdefault.jpg");
+  background-image: url("/images/parkpicture3.jpg");
 }
