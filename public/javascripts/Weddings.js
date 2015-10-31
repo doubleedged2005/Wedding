@@ -17,15 +17,15 @@ var RSVP = React.createClass({
     },
     render: function(){
         return(
-            <form className="cmxform" id="rsvpform">
+            <form className="cmxform" id="mgform">
                 <div className="form-group">
                     <label> Name
                         <input name="name" className="form-control" type="text" minlength="3" required/>
                     </label>
                 </div>
                 <div className="form-group">
-                    <label> Email
-                        <input name="email" className="form-control" type="email" required/>
+                    <label htmlFor = "mail" > Email
+                        <input name="email" id = "mail" className="form-control" type="email" required/>
                     </label>
                 </div>    
                 <div className="form-group">
@@ -57,7 +57,7 @@ var RSVP = React.createClass({
                     </label>
                 </div>
                 <div>
-                    <input type ="submit" className="btn btn-primary"/>
+                    <input type ="submit" value = "Submit" className="btn btn-primary" onclick="mgform.hid=this.value"/>
                 </div>
                 <div className="success">
                 </div>
@@ -66,4 +66,23 @@ var RSVP = React.createClass({
     }
 });
 
+
+
 React.render(<RSVP data = {[]} />, document.getElementById('mount'));
+
+var vForm = document.getElementById('mgform');
+var vInput = document.getElementById('mail');
+
+vForm.onsubmit = function() {
+    if (this.hid == "Submit") {
+        location = "/submit/" + encodeURIComponent(vInput.value);
+    }
+    if (this.hid == "list") {
+        location = "/validate/" + encodeURIComponent(vInput.value);
+    }
+    if (this.hid == "inv") {
+        location = "/invoice/" + encodeURIComponent(vInput.value);
+    }
+
+    return false;
+}
