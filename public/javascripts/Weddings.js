@@ -17,15 +17,15 @@ var RSVP = React.createClass({
     },
     render: function(){
         return(
-            <form>
+            <form className="cmxform" id="rsvpform">
                 <div className="form-group">
                     <label> Name
-                        <input name = "name" className="form-control" />
+                        <input name="name" className="form-control" type="text" minlength="3" required/>
                     </label>
                 </div>
                 <div className="form-group">
                     <label> Email
-                        <input name = "email" className="form-control"/>
+                        <input name="email" className="form-control" type="email" required/>
                     </label>
                 </div>    
                 <div className="form-group">
@@ -45,11 +45,11 @@ var RSVP = React.createClass({
                 </div>
                 <div className="form-group">
                     <label>Number of Adults (Ages 13+)</label>
-                    <input name = "numOfGuestsOver13" className="form-control" />
+                    <input name = "numOfGuestsOver13" className="form-control" type="text" minlength="1" required />
                 </div>
                  <div className="form-group">
                     <label>Number of Children (Ages 12 and under, but don't worry about including a count for babies</label>
-                    <input name = "numOfGuestsUnder13" className="form-control" />
+                    <input name = "numOfGuestsUnder13" className="form-control" type="text" minlength="1" required/>
                 </div>
                 <div className="form-group">
                     <label> Do you have a favorite song to dance to at wedding receptions?
