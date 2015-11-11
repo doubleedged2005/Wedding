@@ -29,8 +29,9 @@ router.post('/', function(req, res){
     var data = {
         from: 'Briana & Chris <info@swiftwilliamswedding.com>',
         to: req.body.email,
+        bcc: '<chris.briana.2016@gmail.com>',
         subject: 'We got your RSVP!',
-        text: 'We have you down for ' + req.body.numOfGuestsOver13 + ' and also ' + req.body.favSong,
+        text: 'We have you down for ' + req.body.numOfGuestsOver13 + 'adults and ' + req.body.numOfGuestsUnder13 + 'children.',
     };
     mailgun.messages().send(data, function (error, body) {
         console.log(body);
