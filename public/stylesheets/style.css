@@ -16,6 +16,55 @@ body {
   width: 100%;
 }
 
+.foodPic{
+  padding: 15% 10% 20% 10%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 5em;
+  color: white;
+}
+
+.jackStack {
+  background-image: url("http://s3-media2.fl.yelpcdn.com/bphoto/Z2j2NZ3YbwBIWCPYn6HqKg/o.jpg");
+}
+
+.kcJoes{
+  background-image: url("http://cdn1.theodysseyonline.com/files/2015/10/09/635799671837706641490182501_o.jpg");
+}
+
+.kinLin{
+  background-image: url("http://s3.amazonaws.com/foodspotting-ec2/reviews/4290779/thumb_600.JPG?1386115238");
+}
+
+.classicCup{
+  background-image: url("http://media-cdn.tripadvisor.com/media/photo-s/02/98/80/12/filename-img-0431-jpg.jpg");
+}
+
+.nelson {
+  background-image: url("http://kcstudio.org/wp-content/uploads/2015/02/nelson-atkins-shuttlecock-009.jpg");
+}
+
+.plaza {
+  background-image: url("http://static1.squarespace.com/static/5315fd8fe4b019ffc6788793/53167d34e4b0be0908f4a55e/53167da2e4b0be0908f4a870/1393982973088/webhome_CCP_kjneptunefountain.jpg");
+}
+
+.loose {
+  background-image: url("http://kcparks.org/wp-content/uploads/2013/03/Loose-Park-Lake-+-IMG_2852-17-Medium.jpg");
+}
+
+.wwi {
+  background-image: url("http://ctitle.com/wp-content/uploads/2015/02/kc-ww1-museum.jpg");
+}
+
+.gardens{
+  background-image: url("http://corbinbronze.com/wp-content/uploads/2012/05/KauffmanGardens.jpg");
+}
+
+.kemper{
+  background-image: url("https://lh3.googleusercontent.com/B8ze6ke5xHq2fw76wosLiGmaSNpqahdih_1EV_Xfe8w=s630-fcrop64=1,26a43b31f8c0d1de");
+}
+
 .background {
   background-attachment: fixed;
   padding: 15% 10% 20% 10%;

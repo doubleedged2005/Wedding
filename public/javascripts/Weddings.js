@@ -19,14 +19,12 @@ var RSVP = React.createClass({
         return(
             <form className="cmxform" id="mgform">
                 <div className="form-group">
-                    <label> Name
-                        <input name="name" className="form-control" type="text" minlength="3" required/>
-                    </label>
+                    <label> Name </label>
+                    <input name="name" className="form-control" type="text" minlength="3" required/>
                 </div>
                 <div className="form-group">
-                    <label htmlFor = "mail" > Email
-                        <input name="email" id = "mail" className="form-control" type="email" required/>
-                    </label>
+                    <label htmlFor = "mail" > Email </label>
+                    <input name="email" id = "mail" className="form-control" type="email" required/>
                 </div>    
                 <div className="form-group">
                     <label> RSVP
@@ -52,9 +50,8 @@ var RSVP = React.createClass({
                     <input name = "numOfGuestsUnder13" className="form-control" type="text" minlength="1" required/>
                 </div>
                 <div className="form-group">
-                    <label> Do you have a favorite song to dance to at wedding receptions?
+                    <label> Do you have a favorite song to dance to at wedding receptions? </label>
                     <input name = "favSong" className="form-control"/>
-                    </label>
                 </div>
                 <div>
                     <input type ="submit" value = "Submit" className="btn btn-primary" onclick="mgform.hid=this.value"/>
