@@ -46,7 +46,7 @@ var RSVP = React.createClass({
                     <input name = "numOfGuestsOver13" className="form-control" type="text" minlength="1" required />
                 </div>
                  <div className="form-group">
-                    <label>Number of Children (Ages 12 and under, but don't worry about including a count for babies</label>
+                    <label>Number of Children (Ages 12 and under, but don't worry about including a count for babies)</label>
                     <input name = "numOfGuestsUnder13" className="form-control" type="text" minlength="1" required/>
                 </div>
                 <div className="form-group">

@@ -90,8 +90,8 @@ h1 {
 }
 
 .cloudy {
-  background-color: rgba(110, 110, 110, 0.7);
-  color: white;
+  background-color: rgba(255,255,255, 0.7);
+  color: rgb(75,75,75);
   padding: 1em;
   border-radius: 10px;
 }
