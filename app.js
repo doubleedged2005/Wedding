@@ -29,6 +29,9 @@ app.use('/', routes);
 app.use('/users', users);
 app.use('/api/WeddingGuests', WeddingGuests);
 
+app.get('/john', function (req, res, next) {
+  res.render('./john.jade', { title: 'john', message: 'Hello there!'});
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
