@@ -10,6 +10,7 @@ require('dotenv').load();
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var WeddingGuests = require('./routes/weddingguests.js');
+var JohnRoutes = require('./routes/johnRoutes.js');
 
 var app = express();
 

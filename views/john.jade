@@ -1,5 +1,5 @@
 doctype html
-html
+html(ng-app='Wedding')
    head
       title= 'Briana & Chris'
       link(rel='stylesheet', href='/stylesheets/style.css')
@@ -14,35 +14,6 @@ html
       script(src='javascripts/John.js', type = "text/jsx")
       link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
    body
-      block content
-
-block content
-   body
       .container
          header
-         div.john
-            #mount2
-            span#dummy.text-left
-               h1.text-center John's List of Questions
-               h4.text-center John, you need to ask these questions.
-               ul
-                  li Cost
-                  ul
-                     li How much is rent?
-                     li What utilities are included, and what are the responsibility of the tenant?
-                     li What is the building average for those utilities?
-                  li Amenities
-                  ul
-                     li Parking?
-                     li Internet speed and cost?
-                     li Locked entry at floor level?
-                     li Is laundry in unit or on the premisis, and what is the cost?
-                  li Culture
-                  ul
-                     li Is there a building policy on noise levels or times of the day?
-                     li Can you offer a crime report for the building and the surrounding areas?
-                     li For an average maitenance request, like
-                  li Other
-                  ul
-                     li How frequently is the building inspected for bugs/rodents?
-                     li
+         #johnApp
