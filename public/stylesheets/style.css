@@ -1,6 +1,9 @@
 body {
   font: 1em "Lucida Grande", Helvetica, Arial, sans-serif;
-  color: white;
+}
+
+.textColor{
+  color: rgb(75,75,75);
 }
 
 .my-fluid-container {
@@ -22,8 +25,22 @@ body {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   height: 5em;
-  color: white;
 }
+
+.info {
+  background-color: rgba(255,255,255, 0.7);
+  height: 0%;
+  padding-top: 2px;
+  position: absolute;
+  padding-left: 2%;
+  padding-right: 2%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 
 .jackStack {
   background-image: url("http://s3-media2.fl.yelpcdn.com/bphoto/Z2j2NZ3YbwBIWCPYn6HqKg/o.jpg");
@@ -86,7 +103,6 @@ h1 {
 .cover {
   background-image: url("/images/parkpicture1.jpg");
   height: 45em;
-  color: rgba(55, 55, 55, 0.8);
 }
 
 .cloudy {
@@ -99,6 +115,10 @@ h1 {
 .details {
   color: black;
   background-image: url("/images/kauffmanpic4.jpg");
+}
+
+.visible-xs	{
+  color: white;
 }
 
 .rsvp {
